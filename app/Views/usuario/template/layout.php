@@ -117,18 +117,21 @@
 
 
 <div class="d-flex w-100 h-100 p-3 mx-auto flex-column">
-    
-    <header class="mb-auto">
+
+    <header class="">
     </header>
-    
+
     <main class="">
         <?php $this->renderSection('content'); ?>
     </main>
 
     <footer class="mt-auto text-white-50 text-center">
-    <p>Developed by <a href="#" class="text-white">edgarDegante</a>, for <a style="link: none" href="https://teziutlan.tecnm.mx/" target="_blank" class="text-white">Tec de Teziutlán.</a> <?php echo date('Y'); ?>.
-    </p>
-</footer>
+        <p>Developed by <a href="#" class="text-white">edgarDegante</a>, for <a style="link: none"
+                                                                                href="https://teziutlan.tecnm.mx/"
+                                                                                target="_blank" class="text-white">Tec
+                de Teziutlán.</a> <?php echo date('Y'); ?>.
+        </p>
+    </footer>
 </div>
 
 <script type="text/javascript" src="<?php echo base_url('assets/js/color-modes.js'); ?>"></script>
