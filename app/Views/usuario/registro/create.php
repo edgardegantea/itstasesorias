@@ -191,14 +191,16 @@
         <form method="POST" action="<?= base_url('admin/estudiantes') ?>" enctype="multipart/form-data">
             <?= csrf_field() ?>
 
-            <div class="card border-light">
+            <div class="card">
+                <!--
                 <div class="card-header">
-                    <h5 class="card-title">Crear usuario</h5>
+                    <h5 class="card-title">Crear usuario</h5> -->
 
                     <!-- <div class="col-xl-12 text-end">
                         <a href="<?= base_url('admin/estudiantes') ?>" class="btn btn-danger">Cancelar y regresar</a>
                     </div> -->
-                </div>
+                <!-- </div> -->
+
 
 
                 <div class="card-body">
@@ -362,7 +364,7 @@
 
 <footer class="footer mt-auto py-3 bg-body-tertiary">
     <div class="container">
-        <span class="text-body-secondary">Place sticky footer content here.</span>
+        <span class="text-body-secondary">Developed by EdgarDegante for Tec de Teziutlán. 2023.</span>
     </div>
 </footer>
 <script src="<?php echo base_url('assets/bootstrap/dist/js/bootstrap.bundle.min.js'); ?>"
