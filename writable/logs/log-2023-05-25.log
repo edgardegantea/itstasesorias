@@ -1,0 +1,1638 @@
+INFO - 2023-05-25 13:42:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-25 13:42:27 --> Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+in SYSTEMPATH/Database/Database.php on line 139.
+ 1 SYSTEMPATH/Database/Database.php(56): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Common.php(362): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH/Database/MigrationRunner.php(151): db_connect()
+ 5 SYSTEMPATH/Config/Services.php(411): CodeIgniter\Database\MigrationRunner->__construct()
+ 6 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::migrations()
+ 7 SYSTEMPATH/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic()
+ 8 SYSTEMPATH/Config/Services.php(406): CodeIgniter\Config\BaseService::getSharedInstance()
+ 9 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::migrations()
+10 SYSTEMPATH/Commands/Database/Migrate.php(69): CodeIgniter\Config\BaseService::__callStatic()
+11 SYSTEMPATH/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+12 SYSTEMPATH/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+13 ROOTPATH/spark(97): CodeIgniter\CLI\Console->run()
+INFO - 2023-05-25 13:49:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-25 13:49:05 --> Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+in SYSTEMPATH/Database/Database.php on line 139.
+ 1 SYSTEMPATH/Database/Database.php(56): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Validation/Userrules.php(9): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/Validation/Validation.php(312): App\Validation\Userrules->validateUser()
+ 6 SYSTEMPATH/Validation/Validation.php(170): CodeIgniter\Validation\Validation->processRules()
+ 7 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 8 APPPATH/Controllers/UserController.php(27): CodeIgniter\Controller->validate()
+ 9 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UserController->login()
+10 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 13:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 13:56:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 13:56:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 13:56:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 13:57:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 13:57:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 13:59:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 13:59:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 13:59:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 13:59:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\UsuarioController::$session is deprecated in APPPATH\Controllers\Admin\UsuarioController.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\UsuarioController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+INFO - 2023-05-25 13:59:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 13:59:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH\Controllers\Admin\CarreraController.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+ERROR - 2023-05-25 13:59:08 --> mysqli_sql_exception: Table 'upn212evaldoc.carreras' doesn't exist in D:\development\Proyectos\UPN212TEZ\evaldoc_linux\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\development\Proyectos\UPN212TEZ\evaldoc_linux\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\development\Proyectos\UPN212TEZ\evaldoc_linux\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\development\Proyectos\UPN212TEZ\evaldoc_linux\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\development\Proyectos\UPN212TEZ\evaldoc_linux\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\development\Proyectos\UPN212TEZ\evaldoc_linux\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\development\Proyectos\UPN212TEZ\evaldoc_linux\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\development\Proyectos\UPN212TEZ\evaldoc_linux\app\Controllers\Admin\CarreraController.php(26): CodeIgniter\BaseModel->findAll()
+#7 D:\development\Proyectos\UPN212TEZ\evaldoc_linux\system\CodeIgniter.php(934): App\Controllers\Admin\CarreraController->index()
+#8 D:\development\Proyectos\UPN212TEZ\evaldoc_linux\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CarreraController))
+#9 D:\development\Proyectos\UPN212TEZ\evaldoc_linux\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\development\Proyectos\UPN212TEZ\evaldoc_linux\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\development\Proyectos\UPN212TEZ\evaldoc_linux\system\Commands\Server\rewrite.php(47): require_once('D:\\development\\...')
+#12 {main}
+CRITICAL - 2023-05-25 13:59:08 --> Table 'upn212evaldoc.carreras' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `carreras`
+ORDER BY `id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `carreras`
+ORDER BY `id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `carreras`
+ORDER BY `id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `carreras`
+ORDER BY `id` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Admin\CarreraController.php(26): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\CarreraController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\CarreraController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\UPN212TEZ\\evaldoc_linux\\public\\index.php')
+ERROR - 2023-05-25 14:07:22 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/MySQLi/Connection.php:173
+Stack trace:
+#0 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/MySQLi/Connection.php(173): mysqli->real_connect()
+#1 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query()
+#4 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#5 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists()
+#6 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#8 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#9 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#10 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/MySQLi/Connection.php:218
+Stack trace:
+#0 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query()
+#3 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#4 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists()
+#5 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Commands/Database/Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest()
+#7 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+#8 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#9 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2023-05-25 14:08:42 --> mysqli_sql_exception: Duplicate entry 'edgar.degante.a@gmail.com' for key 'email' in /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query()
+#4 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute()
+#5 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Model.php(364): CodeIgniter\Database\BaseBuilder->insertBatch()
+#6 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/BaseModel.php(874): CodeIgniter\Model->doInsertBatch()
+#7 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/app/Database/Seeds/Usuario.php(17): CodeIgniter\BaseModel->insertBatch()
+#8 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/Seeder.php(146): App\Database\Seeds\Usuario->run()
+#9 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Commands/Database/Seed.php(77): CodeIgniter\Database\Seeder->call()
+#10 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Seed->run()
+#11 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#12 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/spark(97): CodeIgniter\CLI\Console->run()
+#13 {main}
+INFO - 2023-05-25 14:09:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 14:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 14:09:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 14:09:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 14:09:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+ERROR - 2023-05-25 14:09:40 --> mysqli_sql_exception: Table 'upn212evaldoc.carreras' doesn't exist in /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/app/Controllers/Admin/CarreraController.php(26): CodeIgniter\BaseModel->findAll()
+#7 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/CodeIgniter.php(934): App\Controllers\Admin\CarreraController->index()
+#8 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2023-05-25 14:09:40 --> Table 'upn212evaldoc.carreras' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/Admin/CarreraController.php(26): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin\CarreraController->index()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 14:09:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 14:09:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 14:09:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\UsuarioController::$session is deprecated in APPPATH/Controllers/Admin/UsuarioController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\UsuarioController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 14:09:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 14:09:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 14:09:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\DimensionController::$session is deprecated in APPPATH/Controllers/Admin/DimensionController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\DimensionController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 14:10:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 14:10:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 14:10:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\PreguntaController::$session is deprecated in APPPATH/Controllers/Admin/PreguntaController.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\PreguntaController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 14:12:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 14:12:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+ERROR - 2023-05-25 14:12:14 --> mysqli_sql_exception: Table 'upn212evaldoc.carreras' doesn't exist in /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/app/Controllers/Admin/CarreraController.php(26): CodeIgniter\BaseModel->findAll()
+#7 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/CodeIgniter.php(934): App\Controllers\Admin\CarreraController->index()
+#8 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2023-05-25 14:12:14 --> Table 'upn212evaldoc.carreras' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/Admin/CarreraController.php(26): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin\CarreraController->index()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 14:13:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 14:13:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+ERROR - 2023-05-25 14:13:44 --> mysqli_sql_exception: Table 'upn212evaldoc.carreras' doesn't exist in /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/app/Controllers/Admin/CarreraController.php(26): CodeIgniter\BaseModel->findAll()
+#7 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/CodeIgniter.php(934): App\Controllers\Admin\CarreraController->index()
+#8 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2023-05-25 14:13:44 --> Table 'upn212evaldoc.carreras' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/Admin/CarreraController.php(26): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin\CarreraController->index()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 14:14:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 14:15:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 14:15:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+ERROR - 2023-05-25 14:15:43 --> mysqli_sql_exception: Table 'upn212evaldoc.carreras' doesn't exist in /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/app/Controllers/Admin/CarreraController.php(26): CodeIgniter\BaseModel->findAll()
+#7 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/CodeIgniter.php(934): App\Controllers\Admin\CarreraController->index()
+#8 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2023-05-25 14:15:43 --> Table 'upn212evaldoc.carreras' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/Admin/CarreraController.php(26): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin\CarreraController->index()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 14:17:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 14:17:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+ERROR - 2023-05-25 14:17:44 --> mysqli_sql_exception: Table 'upn212evaldoc.carreras' doesn't exist in /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+#6 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/app/Controllers/Admin/CarreraController.php(26): CodeIgniter\BaseModel->findAll()
+#7 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/CodeIgniter.php(934): App\Controllers\Admin\CarreraController->index()
+#8 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+CRITICAL - 2023-05-25 14:17:44 --> Table 'upn212evaldoc.carreras' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(618): CodeIgniter\Model->doFindAll()
+ 7 APPPATH/Controllers/Admin/CarreraController.php(26): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin\CarreraController->index()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 14:20:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 14:20:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 14:20:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 14:20:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 14:20:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 14:20:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:02:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:02:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:02:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:02:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+CRITICAL - 2023-05-25 15:02:48 --> Invalid file: "admin/carerras/create.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Admin/CarreraController.php(58): view()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin\CarreraController->new()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:03:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:03:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+CRITICAL - 2023-05-25 15:03:46 --> Invalid file: "admin/carerras/create.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Admin/CarreraController.php(58): view()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin\CarreraController->new()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:03:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:03:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:03:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:03:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:03:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+CRITICAL - 2023-05-25 15:03:52 --> Invalid file: "admin/carerras/create.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Admin/CarreraController.php(58): view()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin\CarreraController->new()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:04:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:04:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:04:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:04:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:04:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:04:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:04:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:04:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:04:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:04:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:04:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:04:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:04:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:04:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:04:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:04:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:04:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:04:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:04:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:04:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:04:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:04:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:04:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:04:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:04:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:06:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:06:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:06:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:06:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:06:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:06:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:06:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:06:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:06:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:06:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:06:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:06:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:06:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:06:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:06:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:06:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:07:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:07:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:07:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:07:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:07:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:07:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:07:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:07:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+CRITICAL - 2023-05-25 15:07:09 --> Invalid file: "admin/carreras/show.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Admin/CarreraController.php(45): view()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin\CarreraController->show()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:07:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:07:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+CRITICAL - 2023-05-25 15:07:09 --> Invalid file: "admin/carreras/show.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Admin/CarreraController.php(45): view()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin\CarreraController->show()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:07:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:07:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+CRITICAL - 2023-05-25 15:07:09 --> Invalid file: "admin/carreras/show.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Admin/CarreraController.php(45): view()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin\CarreraController->show()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:07:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:07:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+CRITICAL - 2023-05-25 15:07:09 --> Invalid file: "admin/carreras/show.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Admin/CarreraController.php(45): view()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin\CarreraController->show()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:07:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:07:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+CRITICAL - 2023-05-25 15:07:09 --> Invalid file: "admin/carreras/show.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Admin/CarreraController.php(45): view()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin\CarreraController->show()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:07:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:07:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+CRITICAL - 2023-05-25 15:07:18 --> Undefined property: App\Controllers\Admin\CarreraController::$asignatura
+in APPPATH/Controllers/Admin/CarreraController.php on line 119.
+ 1 APPPATH/Controllers/Admin/CarreraController.php(119): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin\CarreraController->update()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:07:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:07:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:07:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:07:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:07:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:07:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:07:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:07:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:08:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 15:11:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 15:12:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 15:12:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 15:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 15:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 15:13:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:13:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:13:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:13:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:13:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:13:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:13:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:13:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:13:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:13:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:13:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:13:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:13:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:13:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:13:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:13:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:13:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:13:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:13:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:13:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:13:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:13:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:13:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:13:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:13:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:13:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:13:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:13:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:13:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:13:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:13:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:13:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:13:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:13:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:13:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:13:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:13:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:13:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:13:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:13:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:13:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:13:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:13:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:13:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:13:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:13:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:14:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:14:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:15:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:15:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:15:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:15:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:15:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:15:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:16:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:16:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:16:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:16:39 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:16:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 15:47:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 15:47:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:47:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\AsignaturaController::$session is deprecated in APPPATH/Controllers/Admin/AsignaturaController.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\AsignaturaController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:48:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:48:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\AsignaturaController::$session is deprecated in APPPATH/Controllers/Admin/AsignaturaController.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\AsignaturaController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:48:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:48:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\AsignaturaController::$session is deprecated in APPPATH/Controllers/Admin/AsignaturaController.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\AsignaturaController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 15:49:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 15:49:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\AsignaturaController::$session is deprecated in APPPATH/Controllers/Admin/AsignaturaController.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\AsignaturaController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:31:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 16:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 16:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 16:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:31:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:31:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:31:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\ModalidadController::$session is deprecated in APPPATH/Controllers/Admin/ModalidadController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\ModalidadController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:31:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\ModalidadController::$session is deprecated in APPPATH/Controllers/Admin/ModalidadController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\ModalidadController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:31:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:31:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\ModalidadController::$session is deprecated in APPPATH/Controllers/Admin/ModalidadController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\ModalidadController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:31:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:31:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\ModalidadController::$session is deprecated in APPPATH/Controllers/Admin/ModalidadController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\ModalidadController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:31:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:31:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\ModalidadController::$session is deprecated in APPPATH/Controllers/Admin/ModalidadController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\ModalidadController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:31:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:31:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\ModalidadController::$session is deprecated in APPPATH/Controllers/Admin/ModalidadController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\ModalidadController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:31:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:31:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\ModalidadController::$session is deprecated in APPPATH/Controllers/Admin/ModalidadController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\ModalidadController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:31:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:31:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\ModalidadController::$session is deprecated in APPPATH/Controllers/Admin/ModalidadController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\ModalidadController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:31:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:31:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\ModalidadController::$session is deprecated in APPPATH/Controllers/Admin/ModalidadController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\ModalidadController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:31:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:31:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\ModalidadController::$session is deprecated in APPPATH/Controllers/Admin/ModalidadController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\ModalidadController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:31:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:31:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\UsuarioController::$session is deprecated in APPPATH/Controllers/Admin/UsuarioController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\UsuarioController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:31:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\AsignaturaController::$session is deprecated in APPPATH/Controllers/Admin/AsignaturaController.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\AsignaturaController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:32:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:32:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH/Controllers/Admin/EstudianteController.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:32:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:32:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH/Controllers/Admin/EstudianteController.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:32:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:32:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\SedeController::$session is deprecated in APPPATH/Controllers/Admin/SedeController.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\SedeController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:32:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:32:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH/Controllers/Admin/EstudianteController.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:32:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:32:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:33:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:33:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:33:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:33:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH/Controllers/Admin/EstudianteController.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:33:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\SedeController::$session is deprecated in APPPATH/Controllers/Admin/SedeController.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\SedeController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:40:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:40:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:40:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:40:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 16:40:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:40:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\ModalidadController::$session is deprecated in APPPATH/Controllers/Admin/ModalidadController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\ModalidadController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:40:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:42:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:42:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:42:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:42:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:42:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:42:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:42:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:42:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:42:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:42:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:42:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:42:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:42:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:42:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:42:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:42:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:42:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:42:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:42:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:42:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:47:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:47:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:47:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:47:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:47:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:47:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:47:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:47:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:47:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:47:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:47:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:47:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:47:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:47:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:47:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:47:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:47:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:47:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:47:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:47:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:47:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:47:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:47:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:47:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:48:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:48:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:48:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:48:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:48:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:48:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:48:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:48:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:48:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:48:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:48:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:48:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:48:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:48:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:48:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:48:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:48:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:48:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:48:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:48:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:48:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:48:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:48:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:48:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:48:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:48:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:48:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:48:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:48:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:48:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:48:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:48:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\AsignaturaController::$session is deprecated in APPPATH/Controllers/Admin/AsignaturaController.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\AsignaturaController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:52:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:52:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\AsignaturaController::$session is deprecated in APPPATH/Controllers/Admin/AsignaturaController.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\AsignaturaController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:52:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:52:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\DimensionController::$session is deprecated in APPPATH/Controllers/Admin/DimensionController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\DimensionController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:53:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:53:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\PreguntaController::$session is deprecated in APPPATH/Controllers/Admin/PreguntaController.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\PreguntaController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:54:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:54:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\PreguntaController::$session is deprecated in APPPATH/Controllers/Admin/PreguntaController.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\PreguntaController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 16:54:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 16:54:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\PreguntaController::$session is deprecated in APPPATH/Controllers/Admin/PreguntaController.php on line 18.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\PreguntaController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 17:10:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 17:10:00 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH/Controllers/Admin/EstudianteController.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 17:14:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 17:14:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 17:26:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 17:26:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 17:26:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 17:26:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\EstudianteController::$session is deprecated in APPPATH/Controllers/Admin/EstudianteController.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 17:26:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 17:26:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\DimensionController::$session is deprecated in APPPATH/Controllers/Admin/DimensionController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\DimensionController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 17:28:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 17:28:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\AsignaturaController::$session is deprecated in APPPATH/Controllers/Admin/AsignaturaController.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\AsignaturaController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 17:28:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 17:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 17:28:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\AsignaturaController::$session is deprecated in APPPATH/Controllers/Admin/AsignaturaController.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\AsignaturaController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 17:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 17:28:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\UsuarioController::$session is deprecated in APPPATH/Controllers/Admin/UsuarioController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\UsuarioController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 17:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-25 17:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 17:36:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\CarreraController::$session is deprecated in APPPATH/Controllers/Admin/CarreraController.php on line 15.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\CarreraController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 17:36:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 17:36:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\AsignaturaController::$session is deprecated in APPPATH/Controllers/Admin/AsignaturaController.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\AsignaturaController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 17:36:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 17:36:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\AsignaturaController::$session is deprecated in APPPATH/Controllers/Admin/AsignaturaController.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\AsignaturaController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 17:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 17:37:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\AsignaturaController::$session is deprecated in APPPATH/Controllers/Admin/AsignaturaController.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\AsignaturaController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 17:38:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 17:38:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\AsignaturaController::$session is deprecated in APPPATH/Controllers/Admin/AsignaturaController.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\AsignaturaController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 17:38:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 17:38:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\AsignaturaController::$session is deprecated in APPPATH/Controllers/Admin/AsignaturaController.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\AsignaturaController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 17:38:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 17:38:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\AsignaturaController::$session is deprecated in APPPATH/Controllers/Admin/AsignaturaController.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\AsignaturaController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-25 17:39:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-25 17:39:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\Admin\AsignaturaController::$session is deprecated in APPPATH/Controllers/Admin/AsignaturaController.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\AsignaturaController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/run/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+CRITICAL - 2023-05-25 21:13:44 --> Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+in SYSTEMPATH/Database/Database.php on line 139.
+ 1 SYSTEMPATH/Database/Database.php(56): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Common.php(362): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH/Database/MigrationRunner.php(151): db_connect()
+ 5 SYSTEMPATH/Config/Services.php(411): CodeIgniter\Database\MigrationRunner->__construct()
+ 6 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::migrations()
+ 7 SYSTEMPATH/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic()
+ 8 SYSTEMPATH/Config/Services.php(406): CodeIgniter\Config\BaseService::getSharedInstance()
+ 9 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::migrations()
+10 SYSTEMPATH/Commands/Database/Migrate.php(69): CodeIgniter\Config\BaseService::__callStatic()
+11 SYSTEMPATH/CLI/Commands.php(65): CodeIgniter\Commands\Database\Migrate->run()
+12 SYSTEMPATH/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+13 ROOTPATH/spark(97): CodeIgniter\CLI\Console->run()

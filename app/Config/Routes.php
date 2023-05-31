@@ -1,0 +1,78 @@
+<?php
+
+namespace Config;
+
+$routes = Services::routes();
+
+$routes->setDefaultNamespace('App\Controllers');
+$routes->setDefaultController('Home');
+$routes->setDefaultMethod('index');
+$routes->setTranslateURIDashes(false);
+$routes->set404Override();
+
+
+$routes->get('/', 'Home::index');
+$routes->match(['get', 'post'], 'login', 'UserController::login', ["filter" => "noauth"]);
+
+
+
+$routes->get('instrucciones', 'Usuario\FrontendController::instrucciones');
+$routes->get('acercade', 'Usuario\FrontendController::acercade');
+$routes->get('contacto', 'Usuario\FrontendController::contacto');
+// $routes->get('login', 'UserController::login');
+
+
+$routes->group('admin', ['filter' => 'auth'], function ($routes) {
+    $routes->get('/', 'Admin\AdminController::index');
+    // $routes->resource('usuarios', ['controller' => 'Admin\UsuarioController']);
+    $routes->resource('usuarios', ['controller' => 'Admin\UsuarioController']);
+    $routes->resource('asignaturas', ['controller' => 'Admin\AsignaturaController']);
+    $routes->resource('sedes', ['controller' => 'Admin\SedeController']);
+    $routes->resource('estudiantes', ['controller' => 'Admin\EstudianteController']);
+    $routes->resource('modalidades', ['controller' => 'Admin\ModalidadController']);
+    $routes->resource('periodosescolares', ['controller' => 'Admin\PeriodoEscolarController']);
+    $routes->resource('preguntas', ['controller' => 'Admin\PreguntaController']);
+    $routes->resource('dimensiones', ['controller' => 'Admin\DimensionController']);
+    $routes->resource('carreras', ['controller' => 'Admin\CarreraController']);
+    $routes->resource('profesores', ['controller' => 'Admin\ProfesorController']);
+    $routes->resource('evaluacion', ['controller' => 'EvaluacionController']);
+});
+
+$routes->group('docente', ['filter' => 'auth'], function ($routes) {
+    $routes->get('/', 'Docente\DocenteController::index');
+    $routes->resource('asignaturas', ['controller' => 'Docente\AsignaturaController'], ['only' => ['index', 'show']]);
+});
+
+$routes->group('estudiante', ['filter' => 'auth'], function ($routes) {
+    $routes->get('/', 'Estudiante\EstudianteController::index');
+    $routes->resource('evaluacion', ['controller' => 'EvaluacionController']);
+});
+
+$routes->get('logout', 'UserController::logout');
+
+$routes->get('evaluacion', 'EvaluacionController::index');
+
+// Ruta de prueba
+$routes->get('login2', 'UserController::login2');
+$routes->resource('registro', ['controller' => 'RegistroController']);
+
+
+
+
+
+/*
+ * --------------------------------------------------------------------
+ * Additional Routing
+ * --------------------------------------------------------------------
+ *
+ * There will often be times that you need additional routing and you
+ * need it to be able to override any defaults in this file. Environment
+ * based routes is one such time. require() additional route files here
+ * to make that happen.
+ *
+ * You will have access to the $routes object within that file without
+ * needing to reload it.
+ */
+if (is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
+    require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
+}

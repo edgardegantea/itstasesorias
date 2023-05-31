@@ -1,0 +1,156 @@
+INFO - 2023-05-27 16:16:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:16:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-27 16:17:29 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`upn212evaldoc`.`profesores`, CONSTRAINT `profesores_area_foreign` FOREIGN KEY (`area`) REFERENCES `areas` (`id`)) in /media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query()
+#4 /media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute()
+#5 /media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Model.php(364): CodeIgniter\Database\BaseBuilder->insertBatch()
+#6 /media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/BaseModel.php(874): CodeIgniter\Model->doInsertBatch()
+#7 /media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/app/Database/Seeds/Profesor.php(15): CodeIgniter\BaseModel->insertBatch()
+#8 /media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/Seeder.php(146): App\Database\Seeds\Profesor->run()
+#9 /media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Commands/Database/Seed.php(77): CodeIgniter\Database\Seeder->call()
+#10 /media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Seed->run()
+#11 /media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#12 /media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/spark(97): CodeIgniter\CLI\Console->run()
+#13 {main}
+INFO - 2023-05-27 16:18:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:18:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:18:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:18:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:18:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-27 16:18:16 --> Undefined array key "curp"
+in APPPATH/Views/admin/estudiantes/index.php on line 54.
+ 1 APPPATH/Views/admin/estudiantes/index.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/app/Views/admin/estudiantes/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Admin/EstudianteController.php(31): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin\EstudianteController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-27 16:19:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-27 16:19:27 --> Undefined array key "curp"
+in APPPATH/Views/admin/estudiantes/index.php on line 54.
+ 1 APPPATH/Views/admin/estudiantes/index.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/app/Views/admin/estudiantes/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Admin/EstudianteController.php(31): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin\EstudianteController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-27 16:20:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-27 16:20:29 --> Undefined array key "curp"
+in APPPATH/Views/admin/estudiantes/index.php on line 54.
+ 1 APPPATH/Views/admin/estudiantes/index.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/app/Views/admin/estudiantes/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Admin/EstudianteController.php(31): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Admin\EstudianteController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-27 16:21:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-27 16:21:19 --> Class "App\Controllers\Admin\UsuarioModel" not found
+in APPPATH/Controllers/Admin/EstudianteController.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Admin\EstudianteController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/public/index.php')
+INFO - 2023-05-27 16:21:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:26:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:26:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:26:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:26:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:26:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:26:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:26:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:26:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:26:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:26:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:26:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:26:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:26:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:30:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:30:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:30:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:30:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:30:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 16:32:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-05-27 16:34:27 --> mysqli_sql_exception: Duplicate entry 'edgar.degante.a@gmail.com' for key 'email' in /media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query()
+#4 /media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute()
+#5 /media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Model.php(364): CodeIgniter\Database\BaseBuilder->insertBatch()
+#6 /media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/BaseModel.php(874): CodeIgniter\Model->doInsertBatch()
+#7 /media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/app/Database/Seeds/Usuario.php(52): CodeIgniter\BaseModel->insertBatch()
+#8 /media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Database/Seeder.php(146): App\Database\Seeds\Usuario->run()
+#9 /media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/Commands/Database/Seed.php(77): CodeIgniter\Database\Seeder->call()
+#10 /media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/CLI/Commands.php(65): CodeIgniter\Commands\Database\Seed->run()
+#11 /media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/system/CLI/Console.php(37): CodeIgniter\CLI\Commands->run()
+#12 /media/usrx/DEVELOPMENT/development/Proyectos/UPN212TEZ/evaldoc_linux/spark(97): CodeIgniter\CLI\Console->run()
+#13 {main}
+INFO - 2023-05-27 17:06:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 17:06:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 17:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 17:08:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 17:09:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 17:10:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 17:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 17:37:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 17:37:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 17:57:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 17:58:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 17:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 17:58:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 17:59:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 18:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-27 18:00:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
