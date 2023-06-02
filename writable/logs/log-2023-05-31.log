@@ -1,0 +1,1479 @@
+INFO - 2023-05-31 18:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 18:32:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+ERROR - 2023-05-31 18:32:37 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'useradmin'@'localhost' (using password: YES) in D:\development\Proyectos\ITST\asesorias\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 D:\development\Proyectos\ITST\asesorias\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'useradmin', Object(SensitiveParameterValue), 'asesorias', 3306, '', 0)
+#1 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\development\Proyectos\ITST\asesorias\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\development\Proyectos\ITST\asesorias\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\development\Proyectos\ITST\asesorias\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\development\Proyectos\ITST\asesorias\app\Controllers\RegistroController.php(53): CodeIgniter\BaseModel->findAll()
+#7 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(934): App\Controllers\RegistroController->new()
+#8 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+#9 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\development\Proyectos\ITST\asesorias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\development\Proyectos\ITST\asesorias\system\Commands\Server\rewrite.php(47): require_once('D:\\development\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in D:\development\Proyectos\ITST\asesorias\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\development\Proyectos\ITST\asesorias\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\development\Proyectos\ITST\asesorias\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\development\Proyectos\ITST\asesorias\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\development\Proyectos\ITST\asesorias\app\Controllers\RegistroController.php(53): CodeIgniter\BaseModel->findAll()
+#6 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(934): App\Controllers\RegistroController->new()
+#7 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+#8 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\development\Proyectos\ITST\asesorias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\development\Proyectos\ITST\asesorias\system\Commands\Server\rewrite.php(47): require_once('D:\\development\\...')
+#11 {main}
+CRITICAL - 2023-05-31 18:32:37 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `carreras`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\RegistroController.php(53): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->new()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 18:33:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 18:33:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+ERROR - 2023-05-31 18:33:36 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'useradmin'@'localhost' (using password: YES) in D:\development\Proyectos\ITST\asesorias\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 D:\development\Proyectos\ITST\asesorias\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'useradmin', Object(SensitiveParameterValue), 'asesorias', 3306, '', 0)
+#1 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\development\Proyectos\ITST\asesorias\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\development\Proyectos\ITST\asesorias\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\development\Proyectos\ITST\asesorias\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\development\Proyectos\ITST\asesorias\app\Controllers\RegistroController.php(53): CodeIgniter\BaseModel->findAll()
+#7 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(934): App\Controllers\RegistroController->new()
+#8 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+#9 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\development\Proyectos\ITST\asesorias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\development\Proyectos\ITST\asesorias\system\Commands\Server\rewrite.php(47): require_once('D:\\development\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in D:\development\Proyectos\ITST\asesorias\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\development\Proyectos\ITST\asesorias\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\development\Proyectos\ITST\asesorias\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\development\Proyectos\ITST\asesorias\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\development\Proyectos\ITST\asesorias\app\Controllers\RegistroController.php(53): CodeIgniter\BaseModel->findAll()
+#6 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(934): App\Controllers\RegistroController->new()
+#7 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+#8 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\development\Proyectos\ITST\asesorias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\development\Proyectos\ITST\asesorias\system\Commands\Server\rewrite.php(47): require_once('D:\\development\\...')
+#11 {main}
+CRITICAL - 2023-05-31 18:33:36 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `carreras`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\RegistroController.php(53): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->new()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 18:33:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 18:33:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+ERROR - 2023-05-31 18:33:42 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'useradmin'@'localhost' (using password: YES) in D:\development\Proyectos\ITST\asesorias\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 D:\development\Proyectos\ITST\asesorias\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'useradmin', Object(SensitiveParameterValue), 'asesorias', 3306, '', 0)
+#1 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\development\Proyectos\ITST\asesorias\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\development\Proyectos\ITST\asesorias\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\development\Proyectos\ITST\asesorias\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\development\Proyectos\ITST\asesorias\app\Controllers\RegistroController.php(53): CodeIgniter\BaseModel->findAll()
+#7 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(934): App\Controllers\RegistroController->new()
+#8 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+#9 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\development\Proyectos\ITST\asesorias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\development\Proyectos\ITST\asesorias\system\Commands\Server\rewrite.php(47): require_once('D:\\development\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in D:\development\Proyectos\ITST\asesorias\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\development\Proyectos\ITST\asesorias\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\development\Proyectos\ITST\asesorias\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\development\Proyectos\ITST\asesorias\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\development\Proyectos\ITST\asesorias\app\Controllers\RegistroController.php(53): CodeIgniter\BaseModel->findAll()
+#6 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(934): App\Controllers\RegistroController->new()
+#7 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+#8 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\development\Proyectos\ITST\asesorias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 D:\development\Proyectos\ITST\asesorias\system\Commands\Server\rewrite.php(47): require_once('D:\\development\\...')
+#11 {main}
+CRITICAL - 2023-05-31 18:33:42 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `carreras`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\RegistroController.php(53): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->new()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+ERROR - 2023-05-31 18:35:20 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'useradmin'@'localhost' (using password: YES) in D:\development\Proyectos\ITST\asesorias\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 D:\development\Proyectos\ITST\asesorias\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'useradmin', Object(SensitiveParameterValue), 'asesorias', 3306, '', 0)
+#1 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#5 D:\development\Proyectos\ITST\asesorias\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 D:\development\Proyectos\ITST\asesorias\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 D:\development\Proyectos\ITST\asesorias\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\development\Proyectos\ITST\asesorias\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\development\Proyectos\ITST\asesorias\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\development\Proyectos\ITST\asesorias\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in D:\development\Proyectos\ITST\asesorias\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#4 D:\development\Proyectos\ITST\asesorias\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 D:\development\Proyectos\ITST\asesorias\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 D:\development\Proyectos\ITST\asesorias\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 D:\development\Proyectos\ITST\asesorias\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 D:\development\Proyectos\ITST\asesorias\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 D:\development\Proyectos\ITST\asesorias\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+INFO - 2023-05-31 18:36:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 18:36:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+ERROR - 2023-05-31 18:36:29 --> mysqli_sql_exception: Table 'asesorias.carreras' doesn't exist in D:\development\Proyectos\ITST\asesorias\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\development\Proyectos\ITST\asesorias\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\development\Proyectos\ITST\asesorias\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\development\Proyectos\ITST\asesorias\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\development\Proyectos\ITST\asesorias\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\development\Proyectos\ITST\asesorias\app\Controllers\RegistroController.php(53): CodeIgniter\BaseModel->findAll()
+#7 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(934): App\Controllers\RegistroController->new()
+#8 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+#9 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\development\Proyectos\ITST\asesorias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\development\Proyectos\ITST\asesorias\system\Commands\Server\rewrite.php(47): require_once('D:\\development\\...')
+#12 {main}
+CRITICAL - 2023-05-31 18:36:29 --> Table 'asesorias.carreras' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `carreras`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `carreras`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `carreras`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `carreras`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\RegistroController.php(53): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->new()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 18:36:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 18:36:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 18:37:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 18:37:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 18:38:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 18:38:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 18:39:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 18:39:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 18:39:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 18:39:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 18:39:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 18:39:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 18:41:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 18:41:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 18:42:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 18:42:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 18:44:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 18:44:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 18:44:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 18:44:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 18:45:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 18:45:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 18:45:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 18:45:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 18:49:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 18:49:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 18:50:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 18:50:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 18:50:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 18:50:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+ERROR - 2023-05-31 18:50:44 --> mysqli_sql_exception: Table 'asesorias.users' doesn't exist in D:\development\Proyectos\ITST\asesorias\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\development\Proyectos\ITST\asesorias\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 D:\development\Proyectos\ITST\asesorias\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 D:\development\Proyectos\ITST\asesorias\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\development\Proyectos\ITST\asesorias\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('jose@gmail.com', 'email', Array, NULL, 'email')
+#6 D:\development\Proyectos\ITST\asesorias\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'jose@gmail.com', Array, Array)
+#7 D:\development\Proyectos\ITST\asesorias\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 D:\development\Proyectos\ITST\asesorias\app\Controllers\RegistroController.php(67): CodeIgniter\Controller->validate(Array)
+#9 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(934): App\Controllers\RegistroController->create()
+#10 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+#11 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\development\Proyectos\ITST\asesorias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 D:\development\Proyectos\ITST\asesorias\system\Commands\Server\rewrite.php(47): require_once('D:\\development\\...')
+#14 {main}
+CRITICAL - 2023-05-31 18:50:44 --> Table 'asesorias.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'jose@gmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'jose@gmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'jose@gmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('jose@gmail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'jose@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\RegistroController.php(67): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->create()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 18:51:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 18:51:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 18:52:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 18:52:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+ERROR - 2023-05-31 18:52:09 --> mysqli_sql_exception: Table 'asesorias.users' doesn't exist in D:\development\Proyectos\ITST\asesorias\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\development\Proyectos\ITST\asesorias\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 D:\development\Proyectos\ITST\asesorias\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 D:\development\Proyectos\ITST\asesorias\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\development\Proyectos\ITST\asesorias\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('jose@mail.com', 'email', Array, NULL, 'email')
+#6 D:\development\Proyectos\ITST\asesorias\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'jose@mail.com', Array, Array)
+#7 D:\development\Proyectos\ITST\asesorias\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 D:\development\Proyectos\ITST\asesorias\app\Controllers\RegistroController.php(67): CodeIgniter\Controller->validate(Array)
+#9 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(934): App\Controllers\RegistroController->create()
+#10 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+#11 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\development\Proyectos\ITST\asesorias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 D:\development\Proyectos\ITST\asesorias\system\Commands\Server\rewrite.php(47): require_once('D:\\development\\...')
+#14 {main}
+CRITICAL - 2023-05-31 18:52:09 --> Table 'asesorias.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'jose@mail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'jose@mail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'jose@mail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('jose@mail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'jose@mail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\RegistroController.php(67): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->create()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 18:54:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 18:54:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 18:54:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 18:54:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 18:54:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 18:54:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+ERROR - 2023-05-31 18:54:55 --> mysqli_sql_exception: Table 'asesorias.users' doesn't exist in D:\development\Proyectos\ITST\asesorias\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\development\Proyectos\ITST\asesorias\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 D:\development\Proyectos\ITST\asesorias\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 D:\development\Proyectos\ITST\asesorias\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\development\Proyectos\ITST\asesorias\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('jose@mail.com', 'email', Array, NULL, 'email')
+#6 D:\development\Proyectos\ITST\asesorias\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'jose@mail.com', Array, Array)
+#7 D:\development\Proyectos\ITST\asesorias\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 D:\development\Proyectos\ITST\asesorias\app\Controllers\RegistroController.php(67): CodeIgniter\Controller->validate(Array)
+#9 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(934): App\Controllers\RegistroController->create()
+#10 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+#11 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\development\Proyectos\ITST\asesorias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 D:\development\Proyectos\ITST\asesorias\system\Commands\Server\rewrite.php(47): require_once('D:\\development\\...')
+#14 {main}
+CRITICAL - 2023-05-31 18:54:55 --> Table 'asesorias.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'jose@mail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'jose@mail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'jose@mail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('jose@mail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'jose@mail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\RegistroController.php(67): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->create()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 18:56:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 18:56:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 18:56:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 18:56:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 18:57:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 18:57:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+ERROR - 2023-05-31 18:57:29 --> mysqli_sql_exception: Table 'asesorias.users' doesn't exist in D:\development\Proyectos\ITST\asesorias\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\development\Proyectos\ITST\asesorias\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 D:\development\Proyectos\ITST\asesorias\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 D:\development\Proyectos\ITST\asesorias\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\development\Proyectos\ITST\asesorias\system\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('susana@mail.com', 'email', Array, NULL, 'email')
+#6 D:\development\Proyectos\ITST\asesorias\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'susana@mail.com', Array, Array)
+#7 D:\development\Proyectos\ITST\asesorias\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 D:\development\Proyectos\ITST\asesorias\app\Controllers\RegistroController.php(67): CodeIgniter\Controller->validate(Array)
+#9 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(934): App\Controllers\RegistroController->create()
+#10 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+#11 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\development\Proyectos\ITST\asesorias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 D:\development\Proyectos\ITST\asesorias\system\Commands\Server\rewrite.php(47): require_once('D:\\development\\...')
+#14 {main}
+CRITICAL - 2023-05-31 18:57:29 --> Table 'asesorias.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1
+FROM `users`
+WHERE `email` = \'susana@mail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `email` = \'susana@mail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `email` = \'susana@mail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\StrictRules\Rules->is_unique('susana@mail.com', 'email', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('email', 'email', 'susana@mail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\RegistroController.php(67): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->create()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 19:00:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 19:00:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 19:00:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 19:00:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 19:08:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 19:08:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 19:09:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 19:09:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 19:09:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 19:09:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 19:10:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 19:10:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 19:11:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 19:11:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+ERROR - 2023-05-31 19:11:05 --> mysqli_sql_exception: Duplicate entry '10te0015*' for key 'numControl' in D:\development\Proyectos\ITST\asesorias\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\development\Proyectos\ITST\asesorias\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `es...', 0)
+#1 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `es...')
+#2 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `es...')
+#3 D:\development\Proyectos\ITST\asesorias\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `es...', Array, false)
+#4 D:\development\Proyectos\ITST\asesorias\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\development\Proyectos\ITST\asesorias\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\development\Proyectos\ITST\asesorias\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\development\Proyectos\ITST\asesorias\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 D:\development\Proyectos\ITST\asesorias\app\Controllers\RegistroController.php(97): CodeIgniter\BaseModel->save(Array)
+#9 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(934): App\Controllers\RegistroController->create()
+#10 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+#11 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\development\Proyectos\ITST\asesorias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 D:\development\Proyectos\ITST\asesorias\system\Commands\Server\rewrite.php(47): require_once('D:\\development\\...')
+#14 {main}
+CRITICAL - 2023-05-31 19:11:05 --> Duplicate entry '10te0015*' for key 'numControl'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `estudiantes` (`carrera`, `numControl`, `nombre`, `apaterno`, `amaterno`, `curp`, `email`, `password`, `sexo`, `bio`, `foto`, `created_at`, `updated_at`) VALUES (\'2\', \'10te0015*\', \'Esmeralda\', \'Degante\', \'Capol\', NULL, \'esmeralda@mail.com\', \'$2y$10$0I1P5VqwB2i/ePM6yR4v3uIvHtRAaaWyZmqKcyhv.lhQkTwN.EuN.\', \'Mujer\', \'\', NULL, \'2023-05-31 19:11:05\', \'2023-05-31 19:11:05\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `estudiantes` (`carrera`, `numControl`, `nombre`, `apaterno`, `amaterno`, `curp`, `email`, `password`, `sexo`, `bio`, `foto`, `created_at`, `updated_at`) VALUES (\'2\', \'10te0015*\', \'Esmeralda\', \'Degante\', \'Capol\', NULL, \'esmeralda@mail.com\', \'$2y$10$0I1P5VqwB2i/ePM6yR4v3uIvHtRAaaWyZmqKcyhv.lhQkTwN.EuN.\', \'Mujer\', \'\', NULL, \'2023-05-31 19:11:05\', \'2023-05-31 19:11:05\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `estudiantes` (`carrera`, `numControl`, `nombre`, `apaterno`, `amaterno`, `curp`, `email`, `password`, `sexo`, `bio`, `foto`, `created_at`, `updated_at`) VALUES (\'2\', \'10te0015*\', \'Esmeralda\', \'Degante\', \'Capol\', NULL, \'esmeralda@mail.com\', \'$2y$10$0I1P5VqwB2i/ePM6yR4v3uIvHtRAaaWyZmqKcyhv.lhQkTwN.EuN.\', \'Mujer\', \'\', NULL, \'2023-05-31 19:11:05\', \'2023-05-31 19:11:05\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `estudiantes` (`carrera`, `numControl`, `nombre`, `apaterno`, `amaterno`, `curp`, `email`, `password`, `sexo`, `bio`, `foto`, `created_at`, `updated_at`) VALUES (:carrera:, :numControl:, :nombre:, :apaterno:, :amaterno:, :curp:, :email:, :password:, :sexo:, :bio:, :foto:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\RegistroController.php(97): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->create()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+ERROR - 2023-05-31 19:12:17 --> mysqli_sql_exception: Duplicate entry '10te0015*' for key 'numControl' in D:\development\Proyectos\ITST\asesorias\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\development\Proyectos\ITST\asesorias\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `es...', 0)
+#1 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `es...')
+#2 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `es...')
+#3 D:\development\Proyectos\ITST\asesorias\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `es...', Array, false)
+#4 D:\development\Proyectos\ITST\asesorias\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\development\Proyectos\ITST\asesorias\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\development\Proyectos\ITST\asesorias\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\development\Proyectos\ITST\asesorias\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 D:\development\Proyectos\ITST\asesorias\app\Controllers\RegistroController.php(97): CodeIgniter\BaseModel->save(Array)
+#9 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(934): App\Controllers\RegistroController->create()
+#10 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+#11 D:\development\Proyectos\ITST\asesorias\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\development\Proyectos\ITST\asesorias\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 D:\development\Proyectos\ITST\asesorias\system\Commands\Server\rewrite.php(47): require_once('D:\\development\\...')
+#14 {main}
+CRITICAL - 2023-05-31 19:12:17 --> Duplicate entry '10te0015*' for key 'numControl'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `estudiantes` (`carrera`, `numControl`, `nombre`, `apaterno`, `amaterno`, `curp`, `email`, `password`, `sexo`, `bio`, `foto`, `created_at`, `updated_at`) VALUES (\'2\', \'10te0015*\', \'Esmeralda\', \'Degante\', \'Capol\', NULL, \'esmeralda@mail.com\', \'$2y$10$erI4h5QgKeR/UmgrLJujHu8TrYieRiBO249U.p1Odad5FfQyGE/uK\', \'Mujer\', \'\', NULL, \'2023-05-31 19:12:17\', \'2023-05-31 19:12:17\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `estudiantes` (`carrera`, `numControl`, `nombre`, `apaterno`, `amaterno`, `curp`, `email`, `password`, `sexo`, `bio`, `foto`, `created_at`, `updated_at`) VALUES (\'2\', \'10te0015*\', \'Esmeralda\', \'Degante\', \'Capol\', NULL, \'esmeralda@mail.com\', \'$2y$10$erI4h5QgKeR/UmgrLJujHu8TrYieRiBO249U.p1Odad5FfQyGE/uK\', \'Mujer\', \'\', NULL, \'2023-05-31 19:12:17\', \'2023-05-31 19:12:17\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `estudiantes` (`carrera`, `numControl`, `nombre`, `apaterno`, `amaterno`, `curp`, `email`, `password`, `sexo`, `bio`, `foto`, `created_at`, `updated_at`) VALUES (\'2\', \'10te0015*\', \'Esmeralda\', \'Degante\', \'Capol\', NULL, \'esmeralda@mail.com\', \'$2y$10$erI4h5QgKeR/UmgrLJujHu8TrYieRiBO249U.p1Odad5FfQyGE/uK\', \'Mujer\', \'\', NULL, \'2023-05-31 19:12:17\', \'2023-05-31 19:12:17\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `estudiantes` (`carrera`, `numControl`, `nombre`, `apaterno`, `amaterno`, `curp`, `email`, `password`, `sexo`, `bio`, `foto`, `created_at`, `updated_at`) VALUES (:carrera:, :numControl:, :nombre:, :apaterno:, :amaterno:, :curp:, :email:, :password:, :sexo:, :bio:, :foto:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\RegistroController.php(97): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->create()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 19:15:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 19:15:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+CRITICAL - 2023-05-31 19:15:23 --> Undefined variable $carreras
+in APPPATH\Views\usuario\registro\create.php on line 226.
+ 1 APPPATH\Views\usuario\registro\create.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carreras', 'D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php', 226)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuario/registro/create', [], true)
+ 5 APPPATH\Controllers\RegistroController.php(87): view('usuario/registro/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 19:15:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 19:15:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+ERROR - 2023-05-31 20:46:56 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in D:\development\Proyectos\ITST\asesorias\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 D:\development\Proyectos\ITST\asesorias\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'useradmin', Object(SensitiveParameterValue), 'asesorias', 3306, '', 0)
+#1 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\development\Proyectos\ITST\asesorias\system\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\development\Proyectos\ITST\asesorias\system\Database\Config.php(109): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#4 D:\development\Proyectos\ITST\asesorias\system\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(NULL)
+#5 D:\development\Proyectos\ITST\asesorias\system\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#6 D:\development\Proyectos\ITST\asesorias\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 D:\development\Proyectos\ITST\asesorias\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 D:\development\Proyectos\ITST\asesorias\spark(97): CodeIgniter\CLI\Console->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in D:\development\Proyectos\ITST\asesorias\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\development\Proyectos\ITST\asesorias\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\development\Proyectos\ITST\asesorias\system\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\development\Proyectos\ITST\asesorias\system\Database\Config.php(109): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#3 D:\development\Proyectos\ITST\asesorias\system\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(NULL)
+#4 D:\development\Proyectos\ITST\asesorias\system\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#5 D:\development\Proyectos\ITST\asesorias\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#6 D:\development\Proyectos\ITST\asesorias\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#7 D:\development\Proyectos\ITST\asesorias\spark(97): CodeIgniter\CLI\Console->run()
+#8 {main}
+CRITICAL - 2023-05-31 20:46:56 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\Database.php(67): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\Config.php(109): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\Database\Seeder.php(97): CodeIgniter\Database\Config::forge(null)
+ 4 SYSTEMPATH\Commands\Database\Seed.php(69): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+ 5 SYSTEMPATH\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run([...])
+ 6 SYSTEMPATH\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', [...])
+ 7 ROOTPATH\spark(97): CodeIgniter\CLI\Console->run()
+CRITICAL - 2023-05-31 20:47:35 --> syntax error, unexpected single-quoted string "numControl", expecting "]"
+in APPPATH\Controllers\RegistroController.php on line 78.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\development\\Proyectos\\ITST\\asesorias\\app\\Controllers\\RegistroController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\RegistroController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\RegistroController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\RegistroController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 20:48:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 20:48:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 20:49:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 20:49:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+CRITICAL - 2023-05-31 20:49:25 --> Undefined variable $carreras
+in APPPATH\Views\usuario\registro\create.php on line 226.
+ 1 APPPATH\Views\usuario\registro\create.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carreras', 'D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php', 226)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuario/registro/create', [], true)
+ 5 APPPATH\Controllers\RegistroController.php(88): view('usuario/registro/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 20:49:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 20:49:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 20:49:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 20:49:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+CRITICAL - 2023-05-31 20:49:46 --> Undefined variable $carreras
+in APPPATH\Views\usuario\registro\create.php on line 226.
+ 1 APPPATH\Views\usuario\registro\create.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carreras', 'D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php', 226)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuario/registro/create', [], true)
+ 5 APPPATH\Controllers\RegistroController.php(88): view('usuario/registro/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 20:50:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 20:50:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+CRITICAL - 2023-05-31 20:50:09 --> Undefined variable $carreras
+in APPPATH\Views\usuario\registro\create.php on line 226.
+ 1 APPPATH\Views\usuario\registro\create.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carreras', 'D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php', 226)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuario/registro/create', [], true)
+ 5 APPPATH\Controllers\RegistroController.php(88): view('usuario/registro/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 21:18:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-31 21:18:39 --> Undefined array key "email"
+in APPPATH\Validation\Userrules.php on line 10.
+ 1 APPPATH\Validation\Userrules.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'D:\\development\\Proyectos\\ITST\\asesorias\\app\\Validation\\Userrules.php', 10)
+ 2 SYSTEMPATH\Validation\Validation.php(312): App\Validation\Userrules->validateUser('deganteaguilar', 'numControl,password', [...], null, 'password')
+ 3 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('password', 'password', 'deganteaguilar', [...], [...])
+ 4 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 5 APPPATH\Controllers\EstudianteController.php(27): CodeIgniter\Controller->validate([...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\EstudianteController->login()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EstudianteController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 21:22:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-31 21:22:00 --> Undefined array key "email"
+in APPPATH\Validation\Userrules.php on line 10.
+ 1 APPPATH\Validation\Userrules.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'D:\\development\\Proyectos\\ITST\\asesorias\\app\\Validation\\Userrules.php', 10)
+ 2 SYSTEMPATH\Validation\Validation.php(312): App\Validation\Userrules->validateUser('deganteaguilar', 'numControl,password', [...], null, 'password')
+ 3 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('password', 'password', 'deganteaguilar', [...], [...])
+ 4 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 5 APPPATH\Controllers\EstudianteController.php(27): CodeIgniter\Controller->validate([...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\EstudianteController->login()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EstudianteController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 21:26:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-05-31 21:26:20 --> "validateEstudiante" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 320.
+ 1 SYSTEMPATH\Validation\Validation.php(320): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('validateEstudiante')
+ 2 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('password', 'password', 'deganteaguilar', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\EstudianteController.php(27): CodeIgniter\Controller->validate([...], [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\EstudianteController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EstudianteController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 21:30:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 21:30:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 21:30:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 21:30:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 21:31:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 21:31:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+CRITICAL - 2023-05-31 21:31:43 --> Undefined variable $carreras
+in APPPATH\Views\usuario\registro\create.php on line 226.
+ 1 APPPATH\Views\usuario\registro\create.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carreras', 'D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php', 226)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuario/registro/create', [], true)
+ 5 APPPATH\Controllers\RegistroController.php(88): view('usuario/registro/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 21:33:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 21:33:34 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+CRITICAL - 2023-05-31 21:33:34 --> Undefined variable $carreras
+in APPPATH\Views\usuario\registro\create.php on line 226.
+ 1 APPPATH\Views\usuario\registro\create.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carreras', 'D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php', 226)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuario/registro/create', [], true)
+ 5 APPPATH\Controllers\RegistroController.php(88): view('usuario/registro/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 21:36:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 21:36:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+CRITICAL - 2023-05-31 21:36:23 --> Undefined variable $carreras
+in APPPATH\Views\usuario\registro\create.php on line 226.
+ 1 APPPATH\Views\usuario\registro\create.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carreras', 'D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php', 226)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuario/registro/create', [], true)
+ 5 APPPATH\Controllers\RegistroController.php(92): view('usuario/registro/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 21:36:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 21:36:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 21:36:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 21:36:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+CRITICAL - 2023-05-31 21:36:37 --> Undefined variable $carreras
+in APPPATH\Views\usuario\registro\create.php on line 226.
+ 1 APPPATH\Views\usuario\registro\create.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carreras', 'D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php', 226)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuario/registro/create', [], true)
+ 5 APPPATH\Controllers\RegistroController.php(92): view('usuario/registro/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 21:37:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 21:37:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+CRITICAL - 2023-05-31 21:37:52 --> Undefined variable $carreras
+in APPPATH\Views\usuario\registro\create.php on line 226.
+ 1 APPPATH\Views\usuario\registro\create.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carreras', 'D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php', 226)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuario/registro/create', [], true)
+ 5 APPPATH\Controllers\RegistroController.php(92): view('usuario/registro/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 21:37:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 21:37:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 21:37:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 21:37:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 21:38:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 21:38:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+CRITICAL - 2023-05-31 21:38:17 --> Undefined variable $carreras
+in APPPATH\Views\usuario\registro\create.php on line 226.
+ 1 APPPATH\Views\usuario\registro\create.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carreras', 'D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php', 226)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuario/registro/create', [], true)
+ 5 APPPATH\Controllers\RegistroController.php(92): view('usuario/registro/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 21:49:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 21:49:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+CRITICAL - 2023-05-31 21:49:58 --> Undefined variable $carreras
+in APPPATH\Views\usuario\registro\create.php on line 226.
+ 1 APPPATH\Views\usuario\registro\create.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carreras', 'D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php', 226)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuario/registro/create', [], true)
+ 5 APPPATH\Controllers\RegistroController.php(92): view('usuario/registro/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 21:52:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 21:52:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+CRITICAL - 2023-05-31 21:52:10 --> Undefined variable $carreras
+in APPPATH\Views\usuario\registro\create.php on line 226.
+ 1 APPPATH\Views\usuario\registro\create.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carreras', 'D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php', 226)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuario/registro/create', [], true)
+ 5 APPPATH\Controllers\RegistroController.php(92): view('usuario/registro/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 21:52:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 21:52:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+CRITICAL - 2023-05-31 21:52:42 --> Undefined variable $carreras
+in APPPATH\Views\usuario\registro\create.php on line 226.
+ 1 APPPATH\Views\usuario\registro\create.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carreras', 'D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php', 226)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuario/registro/create', [], true)
+ 5 APPPATH\Controllers\RegistroController.php(92): view('usuario/registro/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 21:52:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 21:52:44 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 21:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 21:52:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 21:53:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 21:53:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+CRITICAL - 2023-05-31 21:53:03 --> Undefined variable $carreras
+in APPPATH\Views\usuario\registro\create.php on line 226.
+ 1 APPPATH\Views\usuario\registro\create.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carreras', 'D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php', 226)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuario/registro/create', [], true)
+ 5 APPPATH\Controllers\RegistroController.php(92): view('usuario/registro/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 21:55:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 21:55:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 21:55:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 21:55:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 21:56:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 21:56:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 21:57:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 21:57:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+CRITICAL - 2023-05-31 21:57:12 --> Undefined variable $carreras
+in APPPATH\Views\usuario\registro\create.php on line 226.
+ 1 APPPATH\Views\usuario\registro\create.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carreras', 'D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php', 226)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuario/registro/create', [], true)
+ 5 APPPATH\Controllers\RegistroController.php(88): view('usuario/registro/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 22:09:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 22:09:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+CRITICAL - 2023-05-31 22:09:56 --> Undefined variable $carreras
+in APPPATH\Views\usuario\registro\create.php on line 226.
+ 1 APPPATH\Views\usuario\registro\create.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carreras', 'D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php', 226)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuario/registro/create', [], true)
+ 5 APPPATH\Controllers\RegistroController.php(90): view('usuario/registro/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 22:10:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 22:10:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+CRITICAL - 2023-05-31 22:10:26 --> Undefined variable $carreras
+in APPPATH\Views\usuario\registro\create.php on line 226.
+ 1 APPPATH\Views\usuario\registro\create.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carreras', 'D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php', 226)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuario/registro/create', [], true)
+ 5 APPPATH\Controllers\RegistroController.php(90): view('usuario/registro/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 22:10:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 22:10:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+CRITICAL - 2023-05-31 22:10:42 --> Undefined variable $carreras
+in APPPATH\Views\usuario\registro\create.php on line 226.
+ 1 APPPATH\Views\usuario\registro\create.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carreras', 'D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php', 226)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuario/registro/create', [], true)
+ 5 APPPATH\Controllers\RegistroController.php(64): view('usuario/registro/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->new()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 22:10:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 22:10:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+CRITICAL - 2023-05-31 22:10:43 --> Undefined variable $carreras
+in APPPATH\Views\usuario\registro\create.php on line 226.
+ 1 APPPATH\Views\usuario\registro\create.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carreras', 'D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php', 226)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuario/registro/create', [], true)
+ 5 APPPATH\Controllers\RegistroController.php(64): view('usuario/registro/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->new()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 22:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 22:10:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+CRITICAL - 2023-05-31 22:10:47 --> Undefined variable $carreras
+in APPPATH\Views\usuario\registro\create.php on line 226.
+ 1 APPPATH\Views\usuario\registro\create.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carreras', 'D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php', 226)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuario/registro/create', [], true)
+ 5 APPPATH\Controllers\RegistroController.php(64): view('usuario/registro/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->new()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 22:10:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 22:11:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 22:11:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 22:11:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 22:11:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 22:11:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-05-31 22:11:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 22:11:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+CRITICAL - 2023-05-31 22:11:58 --> Undefined variable $carreras
+in APPPATH\Views\usuario\registro\create.php on line 226.
+ 1 APPPATH\Views\usuario\registro\create.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carreras', 'D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php', 226)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuario/registro/create', [], true)
+ 5 APPPATH\Controllers\RegistroController.php(64): view('usuario/registro/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->new()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 22:19:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 22:19:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+CRITICAL - 2023-05-31 22:19:07 --> Undefined variable $carreras
+in APPPATH\Views\usuario\registro\create.php on line 226.
+ 1 APPPATH\Views\usuario\registro\create.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carreras', 'D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php', 226)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuario/registro/create', [], true)
+ 5 APPPATH\Controllers\RegistroController.php(64): view('usuario/registro/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->new()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 22:19:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 22:19:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+CRITICAL - 2023-05-31 22:19:09 --> Undefined variable $carreras
+in APPPATH\Views\usuario\registro\create.php on line 226.
+ 1 APPPATH\Views\usuario\registro\create.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carreras', 'D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php', 226)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuario/registro/create', [], true)
+ 5 APPPATH\Controllers\RegistroController.php(64): view('usuario/registro/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->new()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 22:19:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 22:19:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+CRITICAL - 2023-05-31 22:19:14 --> Undefined variable $carreras
+in APPPATH\Views\usuario\registro\create.php on line 226.
+ 1 APPPATH\Views\usuario\registro\create.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carreras', 'D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php', 226)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuario/registro/create', [], true)
+ 5 APPPATH\Controllers\RegistroController.php(64): view('usuario/registro/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->new()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 22:19:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 22:19:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+CRITICAL - 2023-05-31 22:19:16 --> Undefined variable $carreras
+in APPPATH\Views\usuario\registro\create.php on line 226.
+ 1 APPPATH\Views\usuario\registro\create.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carreras', 'D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php', 226)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuario/registro/create', [], true)
+ 5 APPPATH\Controllers\RegistroController.php(64): view('usuario/registro/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->new()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 22:19:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 22:19:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+CRITICAL - 2023-05-31 22:19:20 --> Undefined variable $carreras
+in APPPATH\Views\usuario\registro\create.php on line 226.
+ 1 APPPATH\Views\usuario\registro\create.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carreras', 'D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php', 226)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuario/registro/create', [], true)
+ 5 APPPATH\Controllers\RegistroController.php(64): view('usuario/registro/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->new()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 22:20:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 22:20:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+CRITICAL - 2023-05-31 22:20:48 --> Undefined variable $carreras
+in APPPATH\Views\usuario\registro\create.php on line 226.
+ 1 APPPATH\Views\usuario\registro\create.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carreras', 'D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php', 226)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuario/registro/create', [], true)
+ 5 APPPATH\Controllers\RegistroController.php(64): view('usuario/registro/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->new()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 22:20:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 22:20:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+CRITICAL - 2023-05-31 22:20:52 --> Invalid file: "registro/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('registro/index.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('registro/index', [], true)
+ 3 APPPATH\Controllers\RegistroController.php(36): view('registro/index')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 22:20:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 22:20:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+CRITICAL - 2023-05-31 22:20:56 --> Undefined variable $carreras
+in APPPATH\Views\usuario\registro\create.php on line 226.
+ 1 APPPATH\Views\usuario\registro\create.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carreras', 'D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php', 226)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuario/registro/create', [], true)
+ 5 APPPATH\Controllers\RegistroController.php(64): view('usuario/registro/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->new()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 22:21:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 22:21:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 22:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 22:21:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+CRITICAL - 2023-05-31 22:21:30 --> Undefined variable $carreras
+in APPPATH\Views\usuario\registro\create.php on line 226.
+ 1 APPPATH\Views\usuario\registro\create.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carreras', 'D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php', 226)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuario/registro/create', [], true)
+ 5 APPPATH\Controllers\RegistroController.php(90): view('usuario/registro/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 22:22:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 22:22:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+CRITICAL - 2023-05-31 22:22:01 --> Undefined variable $carreras
+in APPPATH\Views\usuario\registro\create.php on line 226.
+ 1 APPPATH\Views\usuario\registro\create.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carreras', 'D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php', 226)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuario/registro/create', [], true)
+ 5 APPPATH\Controllers\RegistroController.php(99): view('usuario/registro/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 22:22:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 22:22:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 22:22:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 22:22:05 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 22:22:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 22:22:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+CRITICAL - 2023-05-31 22:22:17 --> Undefined variable $carreras
+in APPPATH\Views\usuario\registro\create.php on line 226.
+ 1 APPPATH\Views\usuario\registro\create.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carreras', 'D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php', 226)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuario/registro/create', [], true)
+ 5 APPPATH\Controllers\RegistroController.php(99): view('usuario/registro/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 22:25:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 22:25:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+INFO - 2023-05-31 22:26:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-05-31 22:26:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\RegistroController::$session is deprecated in APPPATH\Controllers\RegistroController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\RegistroController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')
+CRITICAL - 2023-05-31 22:26:03 --> Undefined variable $carreras
+in APPPATH\Views\usuario\registro\create.php on line 226.
+ 1 APPPATH\Views\usuario\registro\create.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $carreras', 'D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php', 226)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\development\\Proyectos\\ITST\\asesorias\\app\\Views\\usuario\\registro\\create.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('usuario/registro/create', [], true)
+ 5 APPPATH\Controllers\RegistroController.php(99): view('usuario/registro/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RegistroController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RegistroController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\development\\Proyectos\\ITST\\asesorias\\public\\index.php')

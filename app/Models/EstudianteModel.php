@@ -14,7 +14,7 @@ class EstudianteModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['carrera', 'numControl', 'nombre', 'apaterno', 'amaterno', 'curp', 'email', 'password', 'foto', 'sexo', 'bio', 'status'];
+    protected $allowedFields    = ['carrera', 'modalidad', 'numControl', 'rol', 'nombre', 'apaterno', 'amaterno', 'curp', 'email', 'password', 'foto', 'sexo', 'bio', 'status'];
 
     // Dates
     protected $useTimestamps = true;

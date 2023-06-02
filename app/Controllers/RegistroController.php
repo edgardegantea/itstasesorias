@@ -5,6 +5,7 @@ namespace App\Controllers;
 use CodeIgniter\RESTful\ResourceController;
 use App\Models\EstudianteModel;
 use App\Models\CarreraModel;
+use App\Models\ModalidadModel;
 
 class RegistroController extends ResourceController
 {
@@ -12,6 +13,7 @@ class RegistroController extends ResourceController
     private $estudiante;
     private $db;
     private $carrera;
+    private $modalidad;
 
     public function __construct()
     {
@@ -20,6 +22,7 @@ class RegistroController extends ResourceController
         $this->session = \Config\Services::session();
         $this->estudiante = new EstudianteModel();
         $this->carrera = new CarreraModel();
+        $this->modalidad = new ModalidadModel();
     }
 
     /**
@@ -50,9 +53,13 @@ class RegistroController extends ResourceController
      */
     public function new()
     {
-        $carreras = $this->carrera->findAll();
+        $carreras = model(CarreraModel::class);
+        $modalidades = model(ModalidadModel::class);
 
-        $data = ['carreras' => $carreras];
+        $data = [
+            'carreras'      => $carreras->findAll(),
+            'modalidades'   => $modalidades->findAll()
+        ];
 
         return view('usuario/registro/create', $data);
     }
@@ -64,30 +71,46 @@ class RegistroController extends ResourceController
      */
     public function create()
     {
+
+        helper(['form']);
+
         $inputs = $this->validate([
             'carrera'       => 'required',
+            'modalidad'     => 'required',
             'numControl'    => 'required',
             'nombre'        => 'required|min_length[3]|max_length[80]',
             'apaterno'      => 'required|min_length[3]|max_length[80]',
             'amaterno'      => 'required|min_length[3]|max_length[80]',
-            'email'         => 'required|min_length[6]|max_length[80]|valid_email|is_unique[users.email]',
-            'phone_no'      => 'required|min_length[6]|max_length[20]',
+            'email'         => 'required|min_length[6]|max_length[80]|valid_email|is_unique[estudiantes.email]',
             'password'      => 'required|min_length[6]|max_length[200]',
             'sexo'          => 'required'
         ]);
 
         if (!$inputs) {
-            return view('usuario/registro/create', [
+
+            $carreras = model(CarreraModel::class);
+            $modalidades = model(ModalidadModel::class);
+
+            $data = [
+                'carreras'      => $carreras->findAll(),
+                'modalidades'   => $modalidades->findAll()
+            ];
+
+            return view('usuario/registro/create',  $data, [
                 'validation' => $this->validator
             ]);
         }
 
         $estudiante = new EstudianteModel();
-        $carerras = model(CarreraModel::class);
+        $carreras = model(Carrera::class);
+        $modalidades = model(ModalidadModel::class);
 
-        $this->usuario->save([
-            'carrera'       => $this->request->getPost('carrera'),
+        // 'carrera', 'numControl', 'nombre', 'apaterno', 'amaterno', 'curp', 'email', 'password', 'foto', 'sexo', 'bio', 'status'
+
+        $this->estudiante->save([
             'numControl'    => $this->request->getPost('numControl'),
+            'carrera'       => $this->request->getPost('carrera'),
+            'modalidad'     => $this->request->getPost('modalidad'),
             'nombre'        => $this->request->getPost('nombre'),
             'apaterno'      => $this->request->getPost('apaterno'),
             'amaterno'      => $this->request->getPost('amaterno'),
@@ -95,10 +118,11 @@ class RegistroController extends ResourceController
             'email'         => $this->request->getPost('email'),
             'password'      => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
             'sexo'          => $this->request->getPost('sexo'),
-            'bio'           => $this->request->getPost('bio')
+            'bio'           => $this->request->getPost('bio'),
+            'foto'          => null
         ]);
         session()->setFlashdata('success', 'registro completado con éxito');
-        return redirect()->to(site_url('/usuario/registro/'));
+        return redirect()->to(site_url('/'));
     }
 
     /**

@@ -6,17 +6,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.112.5">
-    <title>Sticky Footer Template · Bootstrap v5.3</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sticky-footer/">
-
+    <meta name="author" content="Edgar Degante Aguilar">
+    <title>Registro</title>
 
     <link href="<?php echo base_url('assets/bootstrap/dist/css/bootstrap.min.css'); ?>" rel="stylesheet"
           integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
     <!-- Favicons -->
+    <!--
     <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
     <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
     <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
@@ -24,7 +21,7 @@
     <link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
     <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
     <meta name="theme-color" content="#712cf9">
-
+    -->
 
     <style>
         .bd-placeholder-img {
@@ -105,7 +102,7 @@
     <!-- Custom styles for this template -->
     <link href="<?php echo base_url('assets/bootstrap/dist/css/sticky-footer.css'); ?>" rel="stylesheet">
 </head>
-<body class="d-flex flex-column h-100">
+<body class="d-flex flex-column h-100 text-light" style="background-color: #062026">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <symbol id="check2" viewBox="0 0 16 16">
         <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
@@ -122,7 +119,7 @@
     </symbol>
 </svg>
 
-<div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+<div class="dropdown position-fixed bottom-0 end-0 mb-5 me-3 bd-mode-toggle">
     <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
             id="bd-theme"
             type="button"
@@ -141,7 +138,7 @@
                 <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
                     <use href="#sun-fill"></use>
                 </svg>
-                Light
+                Claro
                 <svg class="bi ms-auto d-none" width="1em" height="1em">
                     <use href="#check2"></use>
                 </svg>
@@ -153,7 +150,7 @@
                 <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
                     <use href="#moon-stars-fill"></use>
                 </svg>
-                Dark
+                Oscuro
                 <svg class="bi ms-auto d-none" width="1em" height="1em">
                     <use href="#check2"></use>
                 </svg>
@@ -178,7 +175,7 @@
 <!-- Begin page content -->
 <main class="flex-shrink-0">
     <div class="container">
-        <header class="jumbotron mb-5">
+        <header class="jumbotron mb-5 mt-5">
             <h1>Formulario de registro para sistema de asesorías</h1>
         </header>
 
@@ -188,10 +185,10 @@
         </div>
 
 
-        <form method="POST" action="<?= base_url('admin/estudiantes') ?>" enctype="multipart/form-data">
+        <form method="POST" action="<?= base_url('registro') ?>" enctype="multipart/form-data">
             <?= csrf_field() ?>
 
-            <div class="card">
+            <div class="card text-light" style="background-color: #062026">
                 <!--
                 <div class="card-header">
                     <h5 class="card-title">Crear usuario</h5> -->
@@ -205,7 +202,7 @@
 
                 <div class="card-body">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="form-group mb-3 has-validation">
                                 <label class="form-label">NÚMERO DE CONTROL:</label>
                                 <input type="text"
@@ -219,17 +216,27 @@
                                 <?php endif; ?>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="form-group mb-3 has-validation">
-                                <label class="form-label">Carerra:</label>
-                                <select class="form-select" name="carrera" id="">
+                                <label class="form-label">Carrera:</label>
+                                <select class="form-select" name="carrera">
                                     <?php foreach ($carreras as $carrera): ?>
                                         <option value="<?= $carrera['id'] ?>"><?= $carrera['nombre'] ?></option>
                                     <?php endforeach; ?>
                                 </select>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
+                            <div class="form-group mb-3 has-validation">
+                                <label class="form-label">Modalidad:</label>
+                                <select class="form-select" name="modalidad" id="">
+                                    <?php foreach ($modalidades as $modalidad): ?>
+                                        <option value="<?= $modalidad['id'] ?>"><?= $modalidad['nombre'] ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
                             <div class="form-group mb-3 has-validation">
                                 <label class="form-label">Sexo:</label>
                                 <select class="form-select" name="sexo" id="">
@@ -317,15 +324,16 @@
                                 <?php endif; ?>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col md-4">
                             <div class="form-group mb-3 has-validation">
-                                <label class="form-label">Foto:</label>
-                                <input type="file"
-                                       class="form-control <?php if ($validation->getError('foto')): ?>is-invalid<?php endif ?>"
-                                       name="foto" placeholder="Sube tu foto" value="<?php echo set_value('foto'); ?>"/>
-                                <?php if ($validation->getError('foto')): ?>
+                                <label class="form-label">CURP:</label>
+                                <input type="text"
+                                       class="form-control <?php if ($validation->getError('curp')): ?>is-invalid<?php endif ?>"
+                                       name="curp" placeholder="CURP"
+                                       value="<?php echo set_value('curp'); ?>"/>
+                                <?php if ($validation->getError('curp')): ?>
                                     <div class="invalid-feedback">
-                                        <?= $validation->getError('foto') ?>
+                                        <?= $validation->getError('curp') ?>
                                     </div>
                                 <?php endif; ?>
                             </div>
@@ -350,10 +358,12 @@
                     </div>
                 </div>
 
-                <div class="card-footer">
-                    <input type="reset" value="Restablecer" class="btn btn-default">
-                    <button type="submit" class="btn btn-primary float-right">Guardar</button>
-                </div>
+                
+            </div>
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end mr-5 ml-5 mt-5">
+                <input type="reset" value="Restablecer" class="btn btn-default">
+                <button type="submit" class="btn btn-primary float-right">Guardar</button>
             </div>
 
         </form>
@@ -364,7 +374,7 @@
 
 <footer class="footer mt-auto py-3 bg-body-tertiary">
     <div class="container">
-        <span class="text-body-secondary">Developed by EdgarDegante for Tec de Teziutlán. 2023.</span>
+        <span class="text-body-secondary">Developed by EdgarDegante for <a target="_blank" class="link-offset-2 link-underline link-underline-opacity-10" href="https://teziutlan.tecnm.mx/">Tec de Teziutlán</a>. 2023.</span>
     </div>
 </footer>
 <script src="<?php echo base_url('assets/bootstrap/dist/js/bootstrap.bundle.min.js'); ?>"

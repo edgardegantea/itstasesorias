@@ -13,7 +13,9 @@ class Estudiante extends Migration
         $this->forge->addField([
             'id'            => ['type' => 'int', 'constraint' => 11, 'unsigned' => true, 'auto_increment' => true],
             'carrera'       => ['type' => 'int', 'constraint' => 11, 'unsigned' => true, 'auto_increment' => false, 'null' => true],
+            'modalidad'     => ['type' => 'int', 'constraint' => 11, 'unsigned' => true, 'auto_increment' => false, 'null' => true],
             'numControl'    => ['type' => 'varchar', 'constraint' => 20, 'unique' => true, 'null' => true],
+            'rol'           => ['type' => 'varchar', 'constraint' => 20, 'default' => 'estudiante'],
             'nombre'        => ['type' => 'varchar', 'constraint' => 150],
             'apaterno'      => ['type' => 'varchar', 'constraint' => 50],
             'amaterno'      => ['type' => 'varchar', 'constraint' => 50],
@@ -31,6 +33,7 @@ class Estudiante extends Migration
 
         $this->forge->addKey('id', true);
         $this->forge->addForeignKey('carrera', 'carreras', 'id', 'SET_NULL', 'SET_NULL');
+        $this->forge->addForeignKey('modalidad', 'modalidades', 'id', 'SET_NULL', 'SET_NULL');
         $this->forge->createTable('estudiantes', true);
         $this->db->enableForeignKeyChecks();
     }

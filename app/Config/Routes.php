@@ -13,7 +13,7 @@ $routes->set404Override();
 
 $routes->get('/', 'Home::index');
 $routes->match(['get', 'post'], 'login', 'UserController::login', ["filter" => "noauth"]);
-
+$routes->match(['get', 'post'], 'estudianteLogin', 'EstudianteController::login', ["filter" => "noauth"]);
 
 
 $routes->get('instrucciones', 'Usuario\FrontendController::instrucciones');
@@ -49,6 +49,7 @@ $routes->group('estudiante', ['filter' => 'auth'], function ($routes) {
 });
 
 $routes->get('logout', 'UserController::logout');
+$routes->get('estudianteLogout', 'EstudianteController::logout');
 
 $routes->get('evaluacion', 'EvaluacionController::index');
 
